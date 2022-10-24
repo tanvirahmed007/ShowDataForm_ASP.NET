@@ -1,0 +1,21 @@
+﻿@model CreateCustomer;
+
+<h1>Created Customers</h1>
+
+<form>
+    <input type="text" name="name" placeholder="Enter Name" />
+    <input type="text" name="address" placeholder="Enter Address" />
+    <input type="email" name="email" placeholder="Enter Email" />
+    <input type="text" name="phone" placeholder="Enter Phone" />
+    <br />
+    <input type="submit" value="Create" />
+</form>
+
+<div class="container">
+    <div class="card">
+        <p>@(Model.Name)</p>
+        <p>@(Model.Address)</p>
+        <p>@(Model.Phone)</p>
+        <p>@(Model.Email)</p>
+    </div>
+</div>
